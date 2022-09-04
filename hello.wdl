@@ -5,8 +5,11 @@ workflow HelloWorld {
 }
 
 task WriteGreeting {
+  input {
+    String name
+  }
   command {
-     echo "Hello"
+     echo "Hello ${name}!"
   }
   output {
      # Write output to standard out

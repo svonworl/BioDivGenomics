@@ -2,7 +2,8 @@ version: 1.2
 workflows:
   - subclass: WDL
     primaryDescriptorPath: /hello.wdl
-    testParameterFiles: /hello.inputs.json
+    testParameterFiles:
+      - /hello.inputs.json
     authors:
       - name: Shilpa Garg
         email: shilpa.garg@bio.ku.dk

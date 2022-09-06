@@ -13,6 +13,7 @@ task FastK {
   }
   command {
     echo "Running FastK.."
+    echo "soruce: ${source}"
     # FastK -v -t -p "${source}"
   }
   output {

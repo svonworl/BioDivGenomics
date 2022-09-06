@@ -9,7 +9,7 @@ task WriteGreeting {
     String name
   }
   command {
-     echo "Hello ${name}!"
+     echo "Hello 2 ${name}!"
   }
   output {
      # Write output to standard out

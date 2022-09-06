@@ -1,2 +1,6 @@
 *.swp
 *~
+# Cromwell working or log files.
+/Cromwell.stderr.txt
+/Cromwell.stdout.txt
+/cromwell-input/

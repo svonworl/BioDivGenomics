@@ -2,9 +2,9 @@ version: 1.2
 workflows:
   - name: bio-diversity-genomics-garg
     subclass: WDL
-    primaryDescriptorPath: /hello.wdl
+    primaryDescriptorPath: /bio-diversity-genomics-garg.wdl
     testParameterFiles:
-      - /hello.inputs.json
+      - /bio-diversity-genomics-garg.inputs.json
     authors:
       - name: Shilpa Garg
         email: shilpa.garg@bio.ku.dk

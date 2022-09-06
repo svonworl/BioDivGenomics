@@ -1,3 +1,6 @@
+WDL_FILE = bio-diversity-genomics-garg.wdl
+INPUT_FILE = bio-diversity-genomics-garg.inputs.json
+
 default : lint run
 .PHONY : default
 
@@ -10,6 +13,6 @@ lint :
 # Run the wdl file on local.
 run :
 	dockstore tool launch \
-		--local-entry hello.wdl \
-		--json hello.inputs.json
+		--local-entry "$(WDL_FILE)" \
+		--json "$(INPUT_FILE)"
 .PHONY : run
